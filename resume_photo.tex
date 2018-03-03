@@ -1,50 +1,46 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
+\usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{tabu}
 \usepackage{multirow}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
 \Large{
-  \begin{tabu}{ c l r }
-   \multirow{5}{1in}{\includegraphics[width=0.88in]{avatar}} & \scshape{Bin Yuan} & \pbar{Python}{0.75} \\
-    & \email{yuanbin2014@gmail.com} & \pbar{Scala}{0.5} \\
-    & \phone{(+86) 131-221-87xxx} & \pbar{Linux}{0.7} \\
-    & \linkedin[billryan8]{https://www.linkedin.com/in/billryan8} & \pbar{Flask}{0.5} \\
-    & \github[github.com/billryan]{https://github.com/billryan} & \pbar{Javascript}{0.5}
+  \begin{tabu}{ clr }
+   \multirow{5}{1in}{\includegraphics[width=0.88in]{avatar}} & \scshape{贾臻玮} & \pbar{C++}{0.75} \\
+    & \email{manout960920@outlook.com} & \pbar{Java}{0.5} \\
+    & \phone{(+86) 151-000-38767} & \pbar{Linux}{0.6} \\
+    & \github[github.com/jzwdsb]{https://github.com/jzwdsb} & \pbar{Python}{0.5} \\
+   % & \blog[jzwdsb.github.io]{https://jzwdsb.github.io} & \pbar{C}{0.6}
   \end{tabu}
 }
 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{燕山大学}, 秦皇岛}{2015 -- 至今}
+\textit{在读本科生} 计算机科学与技术, 2019 年 6 月份毕业
 
 \section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+\datedsubsection{\textbf{试验机管理平台}}{2017年12月 -- 2017年02月}
+负责后端开发
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item 使用了 JFinal 框架
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+\datedsubsection{\textbf{类 PACAL 语言编译器及简易IDE }}{2017年12月 -- 至今}
+\role{C++, Qt}{个人项目}
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item 容易定制和扩展
+  \item 完整的语法支持
+  \item 从 0 开始的编译器实现
 \end{itemize}
 
+\begin{comment}
 \datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
 \role{\LaTeX, Maintainer}{Individual Projects}
 An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
@@ -53,7 +49,7 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
   \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
   \item FontAwesome 4.5.0 support
 \end{itemize}
-
+\end{comment}
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
 %An xxx optimized for xxx\cite{verma2015large}
@@ -72,11 +68,19 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 % \datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
 % \datedline{Other awards}{2015}
 
-\section{\faInfo\ Miscellaneous}
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
+  \item 编程语言: c++ > java > python
+  \item 平台: Linux
+  \item 熟悉Qt
+\end{itemize}
+
+\section{\faInfo\ 其他}
+\begin{itemize}[parsep=0.5ex]
+  \item Blogs: http://jzwdsb.github.io
+  \item GitHub: https://github.com/jzwdsb
+  \item 语言: 英语 熟练(CET6)
 \end{itemize}
 
 %% Reference
